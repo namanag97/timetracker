@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3AEE086F2CB0E34100102237 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3AEE086E2CB0E34100102237 /* FirebaseAuth */; };
+		3AEE08712CB0E36100102237 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3AEE08702CB0E36100102237 /* FirebaseCore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3AEE084C2CB0DB6700102237 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AEE08712CB0E36100102237 /* FirebaseCore in Frameworks */,
+				3AEE086F2CB0E34100102237 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +132,8 @@
 			);
 			name = timetracker;
 			packageProductDependencies = (
+				3AEE086E2CB0E34100102237 /* FirebaseAuth */,
+				3AEE08702CB0E36100102237 /* FirebaseCore */,
 			);
 			productName = timetracker;
 			productReference = 3AEE08342CB0DB6500102237 /* timetracker.app */;
@@ -208,6 +217,9 @@
 			);
 			mainGroup = 3AEE082B2CB0DB6500102237;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3AEE086D2CB0E34100102237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3AEE08352CB0DB6500102237 /* Products */;
 			projectDirPath = "";
@@ -575,6 +587,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AEE086D2CB0E34100102237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AEE086E2CB0E34100102237 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AEE086D2CB0E34100102237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3AEE08702CB0E36100102237 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AEE086D2CB0E34100102237 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AEE082C2CB0DB6500102237 /* Project object */;
 }
